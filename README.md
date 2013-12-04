@@ -142,7 +142,9 @@ public class VideoPlayer extends Activity implements SurfaceHolder.Callback,
 			String VideoURL = "HLS URL ";
 
 			player.setAudioStreamType(AudioManager.STREAM_MUSIC);
-			player.setDataSource(this, Uri.parse(VideoURL));// "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+			player.setDataSource(this, Uri.parse("	http://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov/playlist.m3u8"));// "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+			
+		
 			player.setOnPreparedListener(this);
 			player.prepareAsync();
 			player.setOnErrorListener(this);
